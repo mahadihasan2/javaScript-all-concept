@@ -15,4 +15,6 @@ var FatherName = "Abul Kalam Azad";
 var SchoolEGecks = true;
 
 var proco = false;
+var pass = true;
+var subcribed = false;
 
