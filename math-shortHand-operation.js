@@ -59,3 +59,12 @@ var firstNumber1 = '0.1';
 var secondNumber2 = '0.2'
 var totalPrice = parseFloat(firstNumber1 + secondNumber2);
 console.log(totalPrice);
+
+// Modules special 
+
+var mango = 17;
+var hungryPerson = 5;
+var division = mango / hungryPerson;
+var remaining = mango % hungryPerson;
+console.log(remaining);
+console.log(division)
