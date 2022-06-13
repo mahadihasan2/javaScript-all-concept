@@ -1,10 +1,10 @@
 // while loop er chepta version hocce forLoop 
 
-var i = 0;
-while (i <= 60) {
-    console.log('Mama tumi sob odd number daw')
-    i = i + 2;
-}
+// var i = 0;
+// while (i <= 60) {
+//     console.log('Mama tumi sob odd number daw')
+//     i = i + 2;
+// }
 
 
 for (rostGiven = 0; rostGiven <= 9; rostGiven++) {
