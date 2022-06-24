@@ -12,3 +12,24 @@ for (let i = 2; i <= 10; i++) {
 
 }
 console.log(fibo);
+
+// Using function and fibonacci Series 
+
+function fibonacciSeries(number) {
+    const fiboNacci = [0, 1];
+    if (typeof (number) != "number") {
+        return "This is not a Number , Please Enter the Number";
+    }
+
+    if (number < 2) {
+        return "This NUmber is Negative , Please enter the Positive Number";
+    }
+    for (let i = 2; i <= 20; i++) {
+        fiboNacci[i] = fiboNacci[i - 1] + fiboNacci[i - 2];
+
+    }
+    return fiboNacci;
+}
+
+const fiboNacciNUmber = fibonacciSeries(-1);
+console.log(fiboNacciNUmber);
