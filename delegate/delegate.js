@@ -29,7 +29,7 @@ document.getElementById("add-item").addEventListener("click", function () {
     // }
 
     document.getElementById("list-item-container").addEventListener("click", function (event) {
-        console.log(event.target);
+        // console.log(event.target);
         event.target.parentNode.removeChild(event.target);
     })
 })
