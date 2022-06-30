@@ -30,4 +30,33 @@ document.getElementById("deposit-btn").addEventListener("click", function () {
     depositInput.value = " ";
 
 
+});
+
+// Handle Withdraw event-handler 
+document.getElementById("withdraw-btn").addEventListener("click", function () {
+    const withdrawInput = document.getElementById("withdraw-input");
+    const withdrawAmountText = withdrawInput.value;
+    const newWithdrawAmount = parseFloat(withdrawAmountText);
+    // console.log(withdrawAmountText)
+
+
+
+    // Set withdrawTotal 
+    const withdrawTotal = document.getElementById("withdraw-total");
+    const previousWithdrawText = withdrawTotal.innerText;
+    const previousWithdrawTotal = parseFloat(previousWithdrawText);
+    const newWithDrawTotal = previousWithdrawTotal + newWithdrawAmount;
+    withdrawTotal.innerText = newWithDrawTotal;
+
+
+    // Update Balance 
+    const balanceTotal = document.getElementById("balance-total");
+    const previousBalanceText = balanceTotal.innerText;
+    const previousBalanceTotal = parseFloat(previousBalanceText);
+    const newBalanceTotal = previousBalanceTotal - newWithdrawAmount;
+    balanceTotal.innerText = newBalanceTotal;
+
+    // Clear withdrawInput Field 
+
+    withdrawInput.value = "";
 })
