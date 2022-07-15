@@ -10,3 +10,7 @@ var secondNumber = numbers.indexOf(78);
 console.log(numbers);
 console.log(secondNumber);
 console.log(index);
+
+/**
+ * Yeah, this is new font awesome
+ */
