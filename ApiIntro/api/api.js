@@ -23,6 +23,31 @@ function loadPost() {
 }
 
 function displayUser(data) {
-    console.log(data);
+    const ul = document.getElementById("users")
+    // console.log(data);
+    for (const user of data) {
+        // console.log(user.name);
+        const li = document.createElement("li");
+        li.innerText = `userName: ${user.name} , E-mail: ${user.email}`;
+        ul.appendChild(li);
+    }
 
+}
+
+// Load Photos 
+function loadPhotos() {
+    fetch("https://jsonplaceholder.typicode.com/photos")
+        .then(res => res.json())
+        .then(data => displayPhotos(data));
+};
+
+function displayPhotos(data) {
+    // console.log(data);
+    const div = document.getElementById("photos");
+    for (photo of data) {
+        // console.log(photo);
+        const li = document.createElement("li");
+        li.innerText = `photoAlbumId: ${photo.albumId} And PhotoTitle: ${photo.title}`
+        div.appendChild(li);
+    }
 }
