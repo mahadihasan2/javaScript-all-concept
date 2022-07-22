@@ -1,0 +1,10 @@
+.countryStyle{
+    border: 2px solid green;
+    border-color: yellow;
+    color: red;
+    box-sizing: border-box;
+    border-radius: 15px;
+    margin: 10px;
+    padding: 20px;
+    background-color: transparent(0,0,0.5,8);
+}

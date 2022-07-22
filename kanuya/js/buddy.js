@@ -1,5 +1,5 @@
 const loadDataOfBuddy = () => {
-    fetch("https://randomuser.me/api/?results=5")
+    fetch("https://randomuser.me/api/?results=100")
         .then(res => res.json())
         .then(data => dispalayDataOfBuddy(data));
 }
