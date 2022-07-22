@@ -7,13 +7,13 @@ const searchFood = () => {
     // console.log(url);
     fetch(url)
         .then(res => res.json())
-        .then(data => console.log(data.meals));
+        .then(data => displaySearchResult(data.meals));
 
 
 
     searchField.value = "";
 }
 
-const displayMealDb = meals => {
-
+const displaySearchResult = meals => {
+    console.log(meals)
 }
