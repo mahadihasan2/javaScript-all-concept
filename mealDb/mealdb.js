@@ -15,8 +15,10 @@ const searchFood = () => {
 }
 
 const displaySearchResult = meals => {
-  console.log(meals)
+  // console.log(meals)
   const searchResult = document.getElementById("search-result");
+  searchResult.innerHTML = ""
+
   meals.forEach(meal => {
     console.log(meal);
     const div = document.createElement("div");
