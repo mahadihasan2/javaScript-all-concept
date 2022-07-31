@@ -17,13 +17,13 @@ if (fith === fourth) {
 }
 
 const obj1 = { a: 1, b: 2 }
-const obj2 = { a: 1, b: 2 }
+const obj2 = { a: 1, b: "2" }
 
-console.log(JSON.stringify(obj1));
-console.log(JSON.stringify(obj2));
-if (JSON.stringify(obj1) == JSON.stringify(obj2)) {
+/* console.log(JSON.stringify(obj1));
+console.log(JSON.stringify(obj2)); */
+/* if (JSON.stringify(obj1) == JSON.stringify(obj2)) {
     console.log("Object are equal")
-}
+} */
 
 
 
