@@ -16,6 +16,13 @@ const heroAlom = {
     id: 120
 }
 
+const maadiHasan = {
+    name: "Jamal",
+    id: 450,
+    money: 9000,
+    work: "Web-development"
+}
+
 students.treatDey(100)
 
 const heroAlomTratDey = students.treatDey.bind(heroAlom);
@@ -24,3 +31,6 @@ heroAlomTratDey(500)
 heroAlomTratDey(500)
 heroAlomTratDey(600)
 students.treatDey(400)
+const mahadiTearDey = students.treatDey.bind(maadiHasan)
+mahadiTearDey(500)
+mahadiTearDey(900)
